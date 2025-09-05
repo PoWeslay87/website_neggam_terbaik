@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sahabat Sejati Kita ❤️</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <i class="fas fa-heart"></i> Nenggam Enggama Li Po
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#gallery">Kenangan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#letter">Surat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#countdown">Hitung Mundur</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-center py-5">
+      <div class="container">
+        <h1 class="display-4 fw-bold" data-aos="fade-up">
+          SAHABAT SEJATI SAYA
+        </h1>
+        <p class="lead mb-5" data-aos="fade-up" data-aos-delay="200">
+          Empat Jiwa, Satu Cerita Tak Terlupakan ❤️
+        </p>
+
+        <!-- Grid 4 Foto -->
+        <div
+          class="row justify-content-center g-4 mb-5"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
+          <!-- Foto 1: Weslay -->
+          <div class="col-6 col-md-3">
+            <img
+              src="img/weslay.jpeg"
+              alt="Weslay Charles Yarinap"
+              class="img-fluid rounded shadow-lg foto-popup"
+              data-bs-toggle="modal"
+              data-bs-target="#fotoModal"
+              data-foto="img/weslay.jpeg"
+              data-nama="Weslay Charles Yarinap"
+            />
+            <h5 class="mt-2">Weslay</h5>
+          </div>
+
+          <!-- Foto 2: Inenus -->
+          <div class="col-6 col-md-3">
+            <img
+              src="img/inen.jpeg"
+              alt="Inenus Wandikmbo"
+              class="img-fluid rounded shadow-lg foto-popup"
+              data-bs-toggle="modal"
+              data-bs-target="#fotoModal"
+              data-foto="img/inen.jpeg"
+              data-nama="Inenus Wandikmbo"
+            />
+            <h5 class="mt-2">Inenus</h5>
+          </div>
+
+          <!-- Foto 3: Jefri -->
+          <div class="col-6 col-md-3">
+            <img
+              src="img/jefri.jpeg"
+              alt="Jefri Yarinap"
+              class="img-fluid rounded shadow-lg foto-popup"
+              data-bs-toggle="modal"
+              data-bs-target="#fotoModal"
+              data-foto="img/jefri.jpeg"
+              data-nama="Jefri Yarinap"
+            />
+            <h5 class="mt-2">Jefri</h5>
+          </div>
+
+          <!-- Foto 4: Gonenus -->
+          <div class="col-6 col-md-3">
+            <img
+              src="img/gon.jpeg"
+              alt="Gonenus Wandikmbo"
+              class="img-fluid rounded shadow-lg foto-popup"
+              data-bs-toggle="modal"
+              data-bs-target="#fotoModal"
+              data-foto="img/gon.jpeg"
+              data-nama="Gonenus Wandikmbo"
+            />
+            <h5 class="mt-2">Gonenus</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Popup Foto -->
+    <div
+      class="modal fade"
+      id="fotoModal"
+      tabindex="-1"
+      aria-labelledby="fotoModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-dark text-white">
+            <h5 class="modal-title" id="fotoModalLabel">
+              Foto : <span id="namaFoto">...</span>
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center">
+            <img
+              id="fotoBesar"
+              src=""
+              alt="Foto Besar"
+              class="img-fluid rounded shadow"
+            />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gallery Section -->
+<section id="gallery" class="py-5 mt-5">
+  <div class="container">
+    <h2 class="text-center mb-5 text-white" data-aos="fade-up">📸 Kenangan Kita</h2>
+    <div class="row g-4 justify-content-center" id="kenangan-container">
+      <!-- Contoh item (nanti bisa diisi via JS atau manual) -->
+      <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="kenangan-card">
+          <img src="img/kenagan4.jpeg" class="img-fluid rounded shadow" alt="Kenangan Indah 1">
+          <div class="kenangan-caption">
+            <p class="mb-0">Perahu kecil, tapi membawa kenangan besar. Saat kita tertawa, bercanda, dan melawan ombak bersama... itu adalah momen yang tak tergantikan.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="kenangan-card">
+          <img src="img/kenangan2.jpeg" class="img-fluid rounded shadow" alt="Kenangan Indah 2">
+          <div class="kenangan-caption">
+            <p class="mb-0"> Setelah melewati jalan yang panjang dan lereng gunung yang menantang, akhirnya kita sampai di sini… di bawah derasnya air terjun Kaladiri 2, dengan senyum yang tak bisa dibeli oleh waktu. ❤️</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="kenangan-card">
+          <img src="img/kenagan5.jpeg" class="img-fluid rounded shadow" alt="Kenangan Indah 2">
+          <div class="kenangan-caption">
+            <p class="mb-0">Di tengah hutan lebat dan air yang jernih, kita menemukan ketenangan. Panati Tanjung Batu, Nabire — tempat yang menyegarkan jiwa dan memperkuat persahabatan.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="kenangan-card">
+          <img src="img/kenagan6.jpeg" class="img-fluid rounded shadow" alt="Kenangan Indah 2">
+          <div class="kenangan-caption">
+            <p class="mb-0">Saat aku bilang 'mau ke bandara', dia langsung bawa motor. Tapi ternyata... kita nggak naik pesawat, tapi naik motor melewati jalan tanah! 😂 Tapi tetap seru, kan</p>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="kenangan-card">
+          <img src="img/kengang7.jpeg" class="img-fluid rounded shadow" alt="Kenangan Indah 2">
+          <div class="kenangan-caption">
+            <p class="mb-0">Tetap Apa Tetap Foto-Foto To.</p>
+          </div>
+        </div>
+      </div>
+
+          <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="kenangan-card">
+          <img src="img/kenangan8.jpeg" class="img-fluid rounded shadow" alt="Kenangan Indah 2">
+          <div class="kenangan-caption">
+            <p class="mb-0">Di tepi laut Erari, kita berdiri dengan kaki telanjang, menghadap ombak yang lembut. Tapi hati kita… sedang bersiap untuk berenang menuju petualangan baru.</p>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Letter Section -->
+    <section id="letter" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5" data-aos="fade-up">
+          💌 Surat untuk Sahabatku
+        </h2>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="card p-4 shadow" data-aos="fade-up">
+              <div class="card-body">
+                <p class="fs-5" id="surat-content">
+                  Hai Sahabatku tersayang...<br /><br />
+                  Terima kasih sudah jadi bagian terindah dalam hidupku. Dari
+                  tawa, tangis, petualangan gila, sampai diam-diam saling
+                  nemenin — semua itu tak tergantikan.<br /><br />
+                  Aku nggak bisa bayangin hidup tanpa kamu. Kamu bukan cuma
+                  sahabat, tapi keluarga, tempat pulang, dan cermin
+                  terbaikku.<br /><br />
+                  Semoga kita selalu begini. Sampai tua, sampai botak, sampai
+                  lupa nama sendiri — kita tetap bareng.<br /><br />
+                  I love you, bestie. ❤️
+                </p>
+                <button class="btn btn-outline-primary mt-3" id="ganti-surat">
+                  Ganti Surat
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section id="countdown" class="py-5 bg-dark text-white">
+      <div class="container text-center">
+        <h2 class="mb-4" data-aos="fade-up">⏳ Hari Spesial Kita</h2>
+        <p>
+          Hitung mundur sampai hari ketemu lagi / anniversary persahabatan kita!
+        </p>
+        <div class="countdown-timer d-flex justify-content-center gap-3 my-4">
+          <div class="time-box">
+            <div class="number" id="days">00</div>
+            <div class="label">Hari</div>
+          </div>
+          <div class="time-box">
+            <div class="number" id="hours">00</div>
+            <div class="label">Jam</div>
+          </div>
+          <div class="time-box">
+            <div class="number" id="minutes">00</div>
+            <div class="label">Menit</div>
+          </div>
+          <div class="time-box">
+            <div class="number" id="seconds">00</div>
+            <div class="label">Detik</div>
+          </div>
+        </div>
+        <p id="event-message" class="mt-3">Waktunya segera tiba...</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <p>
+          © 2025 Sahabat Sejati. Dibuat dengan ❤️ oleh Weslay Charles Yarinap &
+          Inenus Wandikmbo.
+        </p>
+        <p>Sahabat Sejati Baik Dan Buruk Neggam Terbaik.</p>
+      </div>
+    </footer>
+
+    <!-- Background Music -->
+    <audio id="bgMusic" autoplay loop>
+        <source src="music/ansyu.mp3" type="audio/mpeg">
+        Browser kamu tidak mendukung audio.
+    </audio>
+
+    <!-- Tombol Kontrol Musik -->
+    <button id="toggleMusicBtn" class="btn btn-sm btn-outline-light rounded-circle position-fixed bottom-0 end-0 m-4 z-3">
+        <i class="fas fa-pause" id="musicIcon"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+    <!-- Script untuk Modal Foto -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const fotoModal = document.getElementById('fotoModal');
+        fotoModal.addEventListener('show.bs.modal', function (event) {
+          const button = event.relatedTarget;
+          const fotoSrc = button.getAttribute('data-foto');
+          const nama = button.getAttribute('data-nama');
+
+          const modalFoto = document.getElementById('fotoBesar');
+          const modalNama = document.getElementById('namaFoto');
+
+          modalFoto.src = fotoSrc;
+          modalNama.textContent = nama;
+        });
+      });
+    </script>
+  </body>
+</html>
